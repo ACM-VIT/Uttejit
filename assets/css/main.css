@@ -1593,7 +1593,6 @@
 			html {
 				font-size: 11pt;
 			}
-
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -1601,7 +1600,6 @@
 			html {
 				font-size: 11pt;
 			}
-
 		}
 
 		@media screen and (max-width: 980px) {
@@ -1609,13 +1607,22 @@
 			html {
 				font-size: 12pt;
 			}
+			.logo img{
+				display: none !important;
+			}
 
 		}
 
 		@media screen and (max-width: 736px) {
 
 			html {
-				font-size: 12pt;
+				font-size: 8pt;
+			}
+			/*h2{
+				font-size: 8pt !important;
+			}*/
+			.logo img{
+				display: none !important;
 			}
 
 		}
@@ -1623,9 +1630,14 @@
 		@media screen and (max-width: 480px) {
 
 			html {
-				font-size: 12pt;
+				font-size: 8pt;
 			}
-
+			.logo img{
+				display: none !important;
+			}
+			#logo2{
+				display: inline !important;
+			}
 		}
 
 	body {

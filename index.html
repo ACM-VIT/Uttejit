@@ -10,12 +10,20 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo"><a href="index.html"><img src="images/logo.jpg" style="height: 70px; width: 140px;"></a></div>
+				<div class="logo">
+					<a href="index.html">
+					<span><img src="images/Logo.jpg" style="height: 70px; width: 140px;">
+					</span>
+					<span id="logo2" style="display: none;">Team Uttejit</span>
+					</a>
+				</div>
+				<!-- <div class="logo2" style="display: none;"><a href="index.html">Team Uttejit</a></div> -->
 				<a href="#menu"></a>
 			</header>
 
@@ -31,7 +39,7 @@
 		<!-- Banner -->
 			<section class="banner full">
 				<article>
-					<img src="images/1.JPG" alt="" />
+					<img src="images/1.jpg" alt="" />
 					<div class="inner">
 						<header>
 							<p>A free responsive web site template by <a href="https://templated.co">TEMPLATED</a></p>
@@ -155,8 +163,22 @@
 						<p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
 						<h2>Morbi maximus justo</h2>
 					</header>
-					<div class="row">
-							<!-- Facebook iframe -->
+					<div class="gallery">
+						<div>
+							<div class="image fit">
+								<h2 style="background-color: blue; color: white; border-radius: 5px;">Facebook Feed</h2>
+								<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTeamUttejit&tabs=timeline&width=500&height=340&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="500" height="340" style=" width:border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+								</div>
+							</div>
+							<div>
+								<div class="image fit" style="background-color: none; ">
+									<h2 style="background-color: #FC71EB; color: white; border-radius: 5px;">Instagram Feed</h2>
+									<iframe width="500" height="340" src="http://instagram.com/p/																BXgGyx8hRH2/embed" frameborder="0"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="row">
 							<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
 								<div id="iframefb">
 								<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTeamUttejit&tabs=timeline&width=500&height=340&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="500" height="340" style=" width:border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
@@ -168,7 +190,8 @@
 	 								<iframe width="500" height="340" src="http://instagram.com/p/																BXgGyx8hRH2/embed" frameborder="0"></iframe>
 	 							</div>
 							</div>
-					</div>
+					</div> -->
+
 				</div>
 			</section>
 
@@ -189,6 +212,11 @@
 			</footer>
 
 		<!-- Scripts -->
+			<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+			<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
