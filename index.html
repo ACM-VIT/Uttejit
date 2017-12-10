@@ -11,6 +11,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+		<style type="text/css">
+			body{
+				overflow-x: hidden;
+			}
+			#fb_iframe , #insta_iframe{
+				height: 50vh;
+			}
+			@media only screen and (max-width: 500px) {
+				/*for mobiles*/
+		     #insta_iframe{
+		        	width: 100%;
+		    	}
+			}
+			@media only screen and (min-width: 501px) {
+		    	#insta_iframe,.social-link-head{
+		        	width: 70%;
+		        	margin-left: 80px !important;
+
+		    	}
+		    	#fb_iframe{
+		    		padding-left: 79px!important;
+		    	}
+		    	.social-link-head{
+
+		    	}
+
+			}
+			.social-link-head{
+				text-align: center;
+				color: white !important;
+				padding: 15px;
+				border-top-right-radius: 4px;
+				border-top-left-radius: 4px;
+			}
+			#fb_head{
+				background-color: #3b5998;
+			}
+			#insta_head{
+				background-color: #1DA1F2;
+			}
+
+
+		</style>
 	</head>
 	<body>
 
@@ -31,7 +74,12 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
+					<li><a href="sponsors.html">Sponsors</a></li>
+					<li><a href="cars.html">Cars</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="elements.html">Elements</a></li>
 				</ul>
 			</nav>
@@ -163,21 +211,32 @@
 						<p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
 						<h2>Morbi maximus justo</h2>
 					</header>
-					<div class="gallery">
-						<div>
-							<div class="image fit">
-								<h2 style="background-color: blue; color: white; border-radius: 5px;">Facebook Feed</h2>
-								<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTeamUttejit&tabs=timeline&width=500&height=340&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="500" height="340" style=" width:border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					<div class="row">
+					
+							<div class="col-md-6 col-sm-12 center">
+								<br>
+								<div class="social-link-div">
+									<div class="social-link-head" id="fb_head" style="width: 368px;">
+										<h4 style="color: white;">Facebook Feed</h4>
+									</div>
+
+									<iframe id="fb_iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTeamUttejit&tabs=timeline&width=370&height=340&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" style=" width:100% ;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 								</div>
 							</div>
-							<div>
-								<div class="image fit" style="background-color: none; ">
-									<h2 style="background-color: #FC71EB; color: white; border-radius: 5px;">Instagram Feed</h2>
-									<iframe width="500" height="340" src="http://instagram.com/p/																BXgGyx8hRH2/embed" frameborder="0"></iframe>
+							
+						
+							<div class="col-md-6 col-sm-12 ">
+								<br>
+								<div class="social-link-div">
+									<div class="social-link-head" id="insta_head">
+										<h4 style="color: white;">Instagram Feed</h4>
+									</div>
+									<iframe id="insta_iframe" src="http://instagram.com/p/																BXgGyx8hRH2/embed" frameborder="0"></iframe>
+
 								</div>
 							</div>
-						</div>
 					</div>
+				</div>
 					<!-- <div class="row">
 							<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
 								<div id="iframefb">

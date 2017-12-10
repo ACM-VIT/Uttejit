@@ -2366,7 +2366,7 @@
 		.image.fit {
 			display: block;
 			margin: 0 0 2rem 0;
-			width: 100%;
+			/*width: 100%;*/
 		}
 
 			.image.fit img {
@@ -3596,8 +3596,8 @@
 		}
 
 		.gallery .image {
-			background: #FFF;
-			padding: 1rem;
+			/*background: #FFF;*/
+			/*padding: 1rem;*/
 		}
 
 			.gallery .image.fit {
