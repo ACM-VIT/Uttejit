@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>testgal</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style type="text/css">
+		.grid-item { width: 200px; }
+		.grid-item--width2 { width: 400px; }
+	</style>
+</head>
+<body>
+	<div class="grid">
+	  <img src="images/1.jpg" class="grid-item">
+	  <img src="images/3.JPG" class="grid-item">
+	  <img src="images/4.JPG" class="grid-item">
+	  <img src="images/1.jpg" class="grid-item">
+	  <img src="images/3.JPG" class="grid-item">
+	  <img src="images/4.JPG" class="grid-item">
+	</div>
+	<div class="grid">
+	  <img src="images/1.jpg" class="grid-item">
+	  <img src="images/3.JPG" class="grid-item--width2">
+	  <img src="images/4.JPG" class="grid-item">
+	  <img src="images/1.jpg" class="grid-item--width2">
+	  <img src="images/3.JPG" class="grid-item">
+	  <img src="images/4.JPG" class="grid-item">
+	</div>	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script type="text/javascript">
+		$('.grid').masonry({
+		  // options
+		  itemSelector: '.grid-item',
+		  columnWidth: 200
+		});
+	</script>
+</body>
+</html>

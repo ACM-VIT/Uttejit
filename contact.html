@@ -10,9 +10,23 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<style type="text/css">
+			form label{
+				color: black !important;
+			}
+			@media only screen and (max-width: 500px){
+				form{
+					width: 100% !important;
+				}
+				#map iframe{
+					width: 100% !important;
+				}
+			}
+		</style>
 	</head>
 	<body class="subpage">
-
 		<!-- Header -->
 			<header id="header">
 				<div class="logo"><a href="index.html">Team Uttejit</a></div>
@@ -20,7 +34,7 @@
 			</header>
 
 		<!-- Nav -->
-			<nav id="menu">
+			<div id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="sponsors.html">Sponsors</a></li>
@@ -31,35 +45,53 @@
 					<li><a href="about.html">About</a></li>
 					<li><a href="elements.html">Elements</a></li>
 				</ul>
-			</nav>
+			</div>
 
 		<!-- One -->
 			<section id="One" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
 						<p>Eleifend vitae urna</p>
-						<h2>Generic Page Template</h2>
+						<h2>Contact Us</h2>
 					</header>
 				</div>
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<div class="inner">
-					<div class="box">
-						<div class="content">
-							<header class="align-center">
-								<p>maecenas sapien feugiat ex purus</p>
-								<h2>Lorem ipsum dolor</h2>
-							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dignissim augue, in iaculis neque. Etiam bibendum felis ac vulputate pellentesque. Cras non blandit quam. Nunc porta, est non posuere sagittis, neque nunc pellentesque diam, a iaculis lacus urna vitae purus. In non dui vel est tempor faucibus. Aliquam erat volutpat. Quisque vel est vitae nibh laoreet auctor. In nec libero dui. Nulla ullamcorper, dolor nec accumsan viverra, libero eros rutrum metus, vel lacinia magna odio non nunc. Praesent semper felis eu rhoncus aliquam. Donec at quam ac libero vestibulum pretium. Nunc faucibus vel arcu in malesuada. Aenean at velit odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas commodo erat eget molestie sollicitudin. Donec imperdiet, ex sed blandit dictum, ipsum metus ultrices arcu, vitae euismod nisl sapien vitae tortor.</p>
-
-							<p>Vivamus nec odio ac ligula congue feugiat at vitae leo. Aenean sem justo, finibus sed dui eu, accumsan facilisis dolor. Fusce quis dui eget odio iaculis aliquam vel sed velit. Nulla pellentesque posuere semper. Nulla eu sagittis lorem, a auctor nulla. Sed ac condimentum orci, ac varius ante. Nunc blandit quam sit amet sollicitudin sodales.</p>
-
-							<p>Vivamus ultricies mollis mauris quis molestie. Quisque eu mi velit. In et cursus nibh. Donec facilisis, orci sed mollis hendrerit, nunc risus mattis odio, eget efficitur nisl orci a lectus. Aenean finibus neque convallis orci sollicitudin tincidunt. Vivamus lacinia facilisis diam, quis facilisis nisi luctus nec. Aliquam ac molestie enim, ut ultrices elit. Fusce laoreet vulputate risus in tincidunt. Sed commodo mollis maximus. Nullam varius laoreet nibh sit amet facilisis. Donec ac odio vehicula, consequat elit et, sodales justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ac auctor mauris, in hendrerit libero. </p>
-						</div>
-					</div>
-				</div>
+			<section>
+				  <div class="row">
+					    <form class="col s12 m6">
+					      <div class="row">
+					     	<div class="input-field col s6">
+					          <input id="last_name" type="text" class="validate">
+					          <label for="last_name">First Name</label>
+					        </div>
+					        <div class="input-field col s6">
+					          <input id="last_name" type="text" class="validate">
+					          <label for="last_name">Last Name</label>
+					        </div>
+					      </div>
+					      <div class="row">
+					        <div class="input-field col s12">
+					          <input id="email" type="email" class="validate">
+					          <label for="email">Email</label>
+					        </div>
+					      </div>
+					      <div class="row">
+					        <div class="input-field col s12">
+					          <textarea id="textarea1" class="materialize-textarea"></textarea>
+					          <label for="textarea1">Message</label>
+					        </div>
+					      </div>
+					      <div class="row">
+					      	<input type="submit" name="submit" style="background-color: #62f6b7;">
+					      </div>
+					    </form>
+					    <div class="col s12 m6" id="map" style="padding: 5px;">
+					    	<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwWE0f6FHrTsRv8-Mfyp6zho&key=AIzaSyBlE0UYEwbuNoSuAfn000C6aHIo6WkWFtI" allowfullscreen></iframe>
+					    </div>
+					  </div>
+        
 			</section>
 
 		<!-- Footer -->
@@ -83,6 +115,6 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	</body>
 </html>
