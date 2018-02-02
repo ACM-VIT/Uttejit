@@ -72,6 +72,22 @@
 			.icons a {
 				text-decoration: none;
 			}
+			.logo-wrapper img{
+				width: 350px;
+				height: auto;
+			}
+			.logo-wrapper{
+				margin-bottom: 50px;
+			}
+			@media only screen and (max-width: 500px){
+				.logo-wrapper img{
+				width: 320px;
+				height: auto;
+				}
+			.logo-wrapper > div > div{
+				margin-bottom: 20px;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -80,12 +96,11 @@
 			<header id="header" class="alt">
 				<div class="logo">
 					<a href="index.html">
-					<span><img src="images/Logo.png" style="height: 70px; width: 140px;">
+					<span><img src="images/Logo.png" style="height: 60px; width: 140px;">
 					</span>
 					<span id="logo2" style="display: none; font-family: 'Spectral SC', serif;">Team Uttejit</span>
 					</a>
 				</div>
-				<!-- <div class="logo2" style="display: none;"><a href="index.html">Team Uttejit</a></div> -->
 				<a href="#menu"></a>
 			</header>
 
@@ -206,7 +221,10 @@
 								<!-- <p>maecenas sapien feugiat ex purus</p> -->
 								<h2>About VIT</h2>
 							</header>
-							<p>VIT was established with the aim of providing quality higher education on par with international standards. It persistently seeks and adopts innovative methods to improve the quality of higher education. The campus has a cosmopolitan atmosphere with students from all corners of the globe.. The global standards set at VIT in the field of teaching and research, spur us on in our relentless pursuit of excellence. The highly motivated youngsters on the campus are a constant source of pride. Many of our students, who pursue their research projects in foreign universities, bring high quality to their work and esteem to India and have done us proud. With steady steps, we continue our march forward.</p>
+							<div class="row">
+								<img src="images/vitlogo.jpg" class="col-md-6 col-sm-12" style="height: 70%;">
+								<p class="col-md-6 col-sm-12">VIT was established with the aim of providing quality higher education on par with international standards. It persistently seeks and adopts innovative methods to improve the quality of higher education. The campus has a cosmopolitan atmosphere with students from all corners of the globe.. The global standards set at VIT in the field of teaching and research, spur us on in our relentless pursuit of excellence. The highly motivated youngsters on the campus are a constant source of pride. Many of our students, who pursue their research projects in foreign universities, bring high quality to their work and esteem to India and have done us proud. With steady steps, we continue our march forward.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -214,7 +232,7 @@
 		<!-- Three -->
 			<section id="three" class="wrapper style2">
 				<div class="inner">
-					<div class="gallery">
+					<!-- <div class="gallery">
 						<div>
 							<div class="image fit">
 								<a href="#"><img src="images/h4.jpg" alt="" /></a>
@@ -228,6 +246,19 @@
 						<div>
 							<div class="image fit">
 								<a href="#"><img src="images/IEEE.png" alt="" /></a>
+							</div>
+						</div>
+					</div> -->
+					<div class="logo-wrapper">
+						<div class="row">
+							<div class="col-md-4 col-sm-12 col-xs-12">
+								<img src="images/h4.jpg">
+							</div>
+							<div class="col-md-4 col-sm-12 col-xs-12">
+								<img src="images/SAE.jpg">
+							</div>
+							<div class="col-md-4 col-sm-12 col-xs-12">
+								<img src="images/IEEE.png">
 							</div>
 						</div>
 					</div>
