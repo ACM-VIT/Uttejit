@@ -10,7 +10,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       <link rel="stylesheet" href="css/style.css">
-
+      <style type="text/css">
+      	a.selected.ui-link::after{
+      		background-color: blue !important;
+      		border-color: blue !important;
+      	}
+      	a.ui-link.older-event::after{
+      		border-color: blue !important;
+      	}
+      </style>
   
 </head>
 
@@ -28,7 +36,7 @@
 					<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
 				</ol>
 
-				<span class="filling-line" aria-hidden="true"></span>
+				<span class="filling-line" aria-hidden="true" style="background-color: blue;"></span>
 			</div> <!-- .events -->
 		</div> <!-- .events-wrapper -->
 			
