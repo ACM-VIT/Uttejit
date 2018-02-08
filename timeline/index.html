@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <title>Horizontal timeline</title>
   
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       <link rel="stylesheet" href="css/style.css">
@@ -18,6 +19,9 @@
       	a.ui-link.older-event::after{
       		border-color: blue !important;
       	}
+      	body{
+      		font-family: 'Open Sans', sans-serif;
+      	}
       </style>
   
 </head>
@@ -28,12 +32,12 @@
 		<div class="events-wrapper">
 			<div class="events">
 				<ol>
-					<li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+					<li><a href="#0" data-date="16/01/2014" class="selected" style="font-weight: bold;">2014</a></li>
 					<li><a href="#0" data-date="28/02/2014" style="visibility: hidden;">28 Feb</a></li>
 					<li><a href="#0" data-date="20/04/2014" style="visibility: hidden;">20 Mar</a></li>
-					<li><a href="#0" data-date="20/05/2014">20 May</a></li>
-					<li><a href="#0" data-date="09/07/2014" style="visibility: hidden;">09 Jul</a></li>
-					<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+					<li><a href="#0" data-date="20/05/2014" style="font-weight: bold;">2015</a></li>
+					<li><a href="#0" data-date="09/07/2014" style="visibility: hidden;">2016</a></li>
+					<li><a href="#0" data-date="30/08/2014" style="font-weight: bold;">2017</a></li>
 				</ol>
 
 				<span class="filling-line" aria-hidden="true" style="background-color: blue;"></span>
@@ -49,44 +53,52 @@
 	<div class="events-content">
 		<ol>
 			<li class="selected" data-date="16/01/2014">
-				<h2>Eco kart</h2>
+				<h2 style="font-family: 'Open Sans', sans-serif;font-size: 40px;">Eco kart</h2>
 				<!-- <em>January 16th, 2014</em> -->
-				<p style="color: black">	
-					Eco kart is a National Event for students pursuing Engineering Degree / Diploma. The Competition is to design and fabricate a single passenger Kart which is operated via a battery. The Event went live in 2014 with a massive 56 Teams registering for the Event. Various Deligates from Automobile Sector Visited the Event Venue.<br>
-					Results<br>
+				<div class="row">
+					<img src="../images/event1.jpeg" class="col m6 s12" style="width: 300px; height: auto;">
+				<p style="color: black" class="col m6 s12">
+					<span style="font-weight: bold;">Acheivements</span><br>
 					9th in virtual<br>
-					16th overall<br>
-					<center><img src="../images/event1.jpeg"></center>
+					16th overall<br>	
+					Eco kart is a National Event for students pursuing Engineering Degree / Diploma. The Competition is to design and fabricate a single passenger Kart which is operated via a battery. The Event went live in 2014 with a massive 56 Teams registering for the Event. Various Deligates from Automobile Sector Visited the Event Venue.<br>
+					<!-- <center><img src="../images/event1.jpeg"></center> -->
 				</p>
+				</div>
 			</li>
 
 			
 			
 			<li data-date="20/05/2014">
-				<h2>Hybrid Go-Kart</h2>
+				<h2 style="font-family: 'Open Sans', sans-serif;font-size: 40px;">Hybrid Go-Kart</h2>
 				<!-- <em>May 20th, 2014</em> -->
-				<p style="color: black">	
-					The Hybrid Go-kart challenges by Republic Motorsports is for encouraging teams from universities and colleges for manufacture a Hybrid Go-kart in which undergraduate and graduate students will  design, fabricate, develop and compete with small, Go-kart style, hybrid-powered vehicle. The purpose of this event is encourage students to work on hybrid and electric mobility so environment technology for future.<br>
-					Results<br>
-					Best innovation<br>
-					9th overall<br>
-					<center><img src="../images/event2.jpeg"></center>
-				</p>
+				<div class="row">
+					<img src="../images/event2.jpeg" class="col m6 s12">
+					<p style="color: black" class="col m6 s12">	
+						<span style="font-weight: bold;">Acheivements</span><br>	
+						Best innovation<br>
+						9th overall<br>
+						The Hybrid Go-kart challenges by Republic Motorsports is for encouraging teams from universities and colleges for manufacture a Hybrid Go-kart in which undergraduate and graduate students will  design, fabricate, develop and compete with small, Go-kart style, hybrid-powered vehicle. The purpose of this event is encourage students to work on hybrid and electric mobility so environment technology for future.<br>
+					</p>
+				</div>
 			</li>
 
 			
 
 			<li data-date="30/08/2014">
-				<h2>Nirman</h2>
+				<h2 style="font-family: 'Open Sans', sans-serif; font-size: 40px;">Nirman</h2>
 				<!-- <em>August 30th, 2014</em> -->
-				<p style="color: black">	
-					<b>ISIE-HVC</b><br>
-					The objective of the competition is to design and fabricate a hybrid Vehicle or an electrical vehicle under ISIE Design restriction as a chance to students to demonstrate and prove their creativity and their engineering skills in comparison to teams from other universities or colleges around Asia.<br>
-					Results<br>
-					1st overall<br>
-					Best driver award<br>
-					<center><img src="../images/event3.jpeg"></center>
-				</p>
+				<div class="row">
+					<img src="../images/event3.jpeg" class="col m6 s12" style="width: 300px; height: auto;">
+					<p style="color: black" class="col m6 s12">	
+						<span style="font-weight: bold;">Acheivements</span><br>
+						1st overall<br>
+						Best driver award<br>
+						<b>ISIE-HVC</b><br>
+						The objective of the competition is to design and fabricate a hybrid Vehicle or an electrical vehicle under ISIE Design restriction as a chance to students to demonstrate and prove their creativity and their engineering skills in comparison to teams from other universities or colleges around Asia.<br>
+						<!-- <center><img src="../images/event3.jpeg"></center> -->
+					</p>
+				</div>
 			</li>
 		</ol>
 	</div> <!-- .events-content -->
